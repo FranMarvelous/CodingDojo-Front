@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <title>Portfolio</title>
+    <style>
+        *{
+            font-family:'Poppins';
+        }
+
+        body{
+            background-image: url(/images/desk.jpg);
+            background-repeat: no-repeat;
+            background-size:cover; 
+        }
+
+        th, td, input, textarea{
+            border: rgb(60, 160, 199) 1px solid;
+        }
+
+        a{
+            color: rgb(60, 160, 199);
+            font-weight: bold;
+        }
+        
+        img{
+            width:200px;
+        }
+
+        .logo{
+            width:30px;
+        }
+
+        .button{
+            background-color:rgb(60, 160, 199);
+            border-radius: 8px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Francisca Lazo</h1>
+        <img src="/images/fotoPerfil.jpeg" alt="Foto de francisca">
+        <br>
+        <img class="logo" src="/images/github.png" alt="logo github">
+        <a href="www.github.com/franmarvelous">My github</a>
+        <img class="logo" src="/images/linkedin.png" alt="logo linkedin">
+        <a href="www.linkedin.com/in/francisca-lazo-cerpa">My LinkedIn</a>
+        <img class="logo" src="/images/email.png" alt="logo email">
+        <a href="mailto:franciscalazocerpa@gmail.com">My email</a>
+    </header>
+
+    <h2>Tecnologies</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Front-End</th>
+                <th>JavaScript</th>
+                <th>Design/prototyping</th>
+                <th>Database</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>HTML5</td>
+                <td>Express</td>
+                <td>Figma</td>
+                <td>MySQL</td>
+            </tr>
+            <tr>
+                <td>CSS3</td>
+                <td>React</td>
+                <td>Adobe XD</td>
+                <td>PostgreSQL</td>
+            </tr>
+            <tr>
+                <td>Bootstrap</td>
+                <td></td>
+                <td>Balsamiq</td>
+                <td></td>
+            </tr>
+        </tbody>
+    </table>
+    <section>
+        <form action="post">
+            <h2>Contact Me</h2>
+            
+            <label for="name">Name</label>
+            <input type="text" id="name">
+            
+            <label for="email">Email</label>
+            <input type="email" id="email">
+
+            <p>Message</p>
+            <textarea name="message" id="message" cols="65" rows="4"></textarea>   
+        </form>
+        
+        <input class="button" type="submit" value="Send Message">
+    </section>
+</body>
+</html>

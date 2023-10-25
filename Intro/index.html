@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introducción a HTML</title>
+</head>
+<body>
+
+    <h1>Título 1</h1>
+    <h2>Título 2</h2>
+    <h3>Título 3</h3>
+    <h4>Título 4</h4>
+    <h5>Título 5</h5>
+    <h6>Título 6</h6>
+    
+    <p>Este es un párrafo ordinario.</p>
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa officiis, nobis error hic magnam distinctio accusantium laudantium, eligendi debitis dolor doloremque dolore cumque, nisi totam harum necessitatibus placeat voluptatum eius?
+    </p> <!--ALT + Z PARA AJUSTAR TEXTO A PANTALLA-->
+
+    <a href="http://google.com" target="_blank">Este es un enlace a Google</a>
+
+    <p>
+        Etiqueta <strong>strong o negrita</strong> y etiqueta <em>enfasis o itálica.</em>
+    </p>
+
+    <h2>Lista desordenada</h2>
+    <ul>
+        <li>Escuchar música</li>
+        <li>Leer</li>
+        <li>Ver peliculas</li>
+        <li>Salir con amigos</li>
+        <li>Comer</li>
+        <li>Jugar videojuegos</li>
+    </ul>
+
+    <h2>Tabla ordenada</h2>
+    <ol>
+        <li>Miau</li>
+        <li>Guau</li>
+        <li>Pio</li>
+        <li>Cuak</li>
+    </ol>
+
+    <h2>Tabla</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Encabezado 1</th>
+                <th>Encabezado 2</th>
+                <th>Encabezado 3</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Columna 1.1</td>
+                <td>Columna 1.2</td>
+                <td>Columna 1.3</td>
+            </tr>
+            <tr>
+                <td>Columna 2.1</td>
+                <td>Columna 2.2</td>
+                <td>Columna 2.3</td>
+            </tr>
+        </tbody>
+    </table>
+    <img src="images/grumpycat.jpg" alt="Gato Grumpy Cat">
+
+    <h2>Formulario</h2>
+    <form action="#" method="post">
+        <div>
+            <label>Nombre:</label>
+            <input type="text" name="nombre" placeholder="ej. Anastasya Medina"/>
+        </div>
+        <div>
+            <label>Edad:</label>
+            <input type="number" name="edad"/>
+        </div>
+        <div>
+            <label>Contraseña:</label>
+            <input type="password" name="contrasena"/>
+        </div>
+        <div>
+            <label>Fecha de nacimiento:</label>
+            <input type="date" name="nacimiento"/>
+        </div>
+        <div>
+            <label>E-mail</label>
+            <input type="email" name="email" placeholder="ej. usuario@mail.com"/>
+        </div>
+    <!-- Para separar los inputs y ponerlos abajo entre ellos, se recomienda poner cada label e input en un div o en la propia etiqueta semantica correspondiente para contenerla; mejor que utilizar solo breaks <br> -->
+        <div>
+            <h6>Estado civil:</h6>
+            <input type="radio" name="estado_civil" value="casado" id="casado">
+            <label for="casado">Casado/a</label>
+            <br>
+            <input type="radio" name="estado_civil" value="soltero" id="soltero">
+            <label for="soltero">Soltero/a</label>
+        </div>
+        <div>
+            <input type="checkbox" name="terminos_condiciones" id="terminos_condiciones">
+            <label for="terminos_condiciones">Aceptar términos y condiciones.</label>
+        </div>
+        <div>
+            <h6>Comentarios:</h6>
+            <textarea name="" id="" cols="30" rows="10"></textarea>
+            <!--Col es a izquierda, row es hacia abajo-->
+        </div>
+        <div>
+            <h6>Comida favorita</h6>
+            <select>
+                <option value="pizza">Pizza</option>
+                <option value="tacos">Tacos</option>
+                <option value="Hamburguesa">Hamburguesa</option>
+                <option value="papas">Papas fritas</option>
+            </select>
+        </div>
+        <br>
+        <div>
+            <input type="submit" value="Enviar">
+        </div>
+    </form>
+
+</body>
+</html>
