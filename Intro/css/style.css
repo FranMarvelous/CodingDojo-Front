@@ -30,3 +30,41 @@ p  strong {
 color: aquamarine;
 background-color: green;
 }
+
+#texto{
+    text-align: justify; /*left,center, right, justify*/
+    text-decoration: underline; /* underline, line-trough,none, overline*/
+    font-style: italic; /*italic, normal*/
+    font-weight: bold; /*bold, normal, light, 100 ...*/
+    font-size: 20px;
+    font-family: sans-serif; /*cursive es la parecida a las actividades de la plataformade coding dojo*/
+}
+
+.tamano{
+    background-color: gray;
+    width: 400px;
+    height: 50px;
+}
+
+.background{
+    width: 400px;
+    height: 600px;
+    border: 1px solid black;
+    background-color: aqua;
+    background-image: url(/images/grumpyHead.png);
+    background-repeat: no-repeat;
+    background-size: 100px; /*AUTO significa que es el tamaño original de la imagen, COVER estira verticalmente la imagen para cubrir el espacio, 100% estira horizontalmente, CONTAIN ajusta el tamaño de la imagen al tamaño del contenedor*/
+    background-position: center; /*ubica la imagen centrada horizontal y verticalmente*/
+}
+
+#box_model{
+    background-color: lightblue;
+    width: 100px;
+    height: 100px;
+    margin: 20px; /*espacio entre elementos*/
+    /*al escribir margin: 50px 15 px, se refiere a ARRIBA-ABAJO y DERECHA-IZQUIERDA; si las escribo todas tipo 10px 20 px 4px 30px son todos los lados en sentido del reloj*/
+    padding: 10px; /*espacio interior o margen interno, elementos dentro del contenedor se mueven*/
+    border: 2px double black; /*se puede usar solid, dashed, dotted, y double*/
+}
+
+/*PARA CENTRAR CONTENEDOR CON MARGIN: se ajusta el margin top-bottom con medida requerida y para left-right se pone AUTO, ej: margin: 10px auto*/
