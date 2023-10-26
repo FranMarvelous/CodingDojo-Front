@@ -1,0 +1,31 @@
+*{
+    font-family: Arial;
+    margin: 5px;
+}
+
+#search{
+    background-color: white;
+    color: #1CA0A1;
+    border: 1px solid #1CA0A1;
+    border-radius: 10px;
+    width:9em;
+    height: 25px;
+}
+
+#plus{
+    background-color: #00d1b2;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 2em;
+    height: 2em;
+}
+
+#account{
+    background-color: #2B78E4;
+    color: white;
+    border: 1px solid black;
+    box-shadow: 2px 2px 0 black;
+    width: 10em;
+    height: 25px;
+}

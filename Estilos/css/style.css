@@ -1,0 +1,27 @@
+*{
+    font-family: cursive;
+}
+
+h1{
+    color: white;
+    background-color: black;
+}
+
+h1 > span {
+    color: aqua;
+}
+
+h2{
+    color: white;
+    background-color: blueviolet;
+    text-align: center;
+    font-weight: lighter;
+    font-style: italic;
+}
+
+h3{
+    color: blueviolet;
+    background-color: cadetblue;
+    text-align: right;
+    text-decoration: underline;
+}

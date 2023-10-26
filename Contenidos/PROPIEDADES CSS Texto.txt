@@ -1,0 +1,115 @@
+PROPIEDADES CSS: Texto
+
+Objetivos
+Aprender sobre  text-align y text-decoration
+Aprender acerca de font-weight, font-style y font-family
+Alineación del texto
+Podemos ajustar la alineación del texto usando text-align
+
+text-align: left;
+text-align: center;
+text-align: right;
+
+Decoración de texto/estilo de fuente/peso de fuente
+Podemos aplicar (o eliminar) un subrayado al texto usando la propiedad text-decoration 
+
+text-decoration: underline;
+text-decoration: line-through;
+text-decoration: none;
+
+Podemos aplicar o eliminar cursiva usando  font-style
+
+font-style: italic;
+font-style: normal;
+
+Podemos hacer que el texto sea en negrita o angosta con font-weight
+
+font-weight: normal;
+
+font-weight: light;
+
+font-weight: bold;
+
+La propiedad font-weight también acepta valores numéricos: 100, 200, 300, 400, 500, 600, 700, 800, 900
+
+Ten en cuenta que font-weight solo se aplicará si la familia de fuentes contiene estilos para él
+
+Familia tipográfica
+Hay mucho que aprender sobre las fuentes, pero por ahora centrémonos en los tipos básicos: serif, sans-serif, monospace, and cursive.
+
+font-family: serif;
+font-family: sans-serif;
+font-family: monospace;
+font-family: cursive;
+
+
+    width: 250px;
+  }
+
+font-size (tamaño de fuente):
+Los valores de la propiedad font-size se pueden expresar en cuatro unidades diferentes ps, px, em, %. pt y px (punto y píxel) se consideran valores de tamaño estáticos y no se ajustarán correctamente al cambiar el tamaño de tu página. em y % (medida de respuesta y porcentaje), sin embargo, cambiarán de tamaño y son lo que la mayoría de los desarrolladores recomiendan usar. A continuación, se muestra un cuadro desplegable que muestra los equivalentes aproximados entre las cuatro unidades. (** Nota ** no tienen como fin actualizar el código)
+
+
+Point | Pixel | Em | Percent
+  h3 {
+    font-size: 10pt;
+  }
+  p {
+    font-size: 14px;
+  }
+  a {
+    font-size: 1.2em;
+  }
+  span {
+    font-size: 80%;
+  }
+
+overflow:
+Esta propiedad determina lo que debe suceder cuando el contenido dentro de un contenedor es demasiado para el tamaño del contenedor. Puedes configurar el contenedor para ocultar la información adicional que no encaja, mostrar la información sin importar qué, o tener una barra de desplazamiento añadida al elemento para que el contenido sea contenido pero visible.
+
+  div {
+    overflow: scroll;
+  }
+
+background:
+La propiedad background puede modificar el fondo de un elemento en una sola línea. Esta es una versión más corta que dividir cada propiedad en su propia línea de código. El color se puede definir mediante código hexadecimal, rgb o semántico.
+
+  p {
+    background: #ffffff url("cerezas.png") no-repeat fixed center;
+  }
+
+background-color | background-image | background-position | background-size | background-repeat:
+Estas propiedades bakcground ajustan el fondo por tipo de propiedad. Al igual que background, background-color se puede definir mediante código hexadecimal, rgb o semántico.
+
+  p {
+    background-color: blue;
+  }
+  div {
+    background-image: url("cerezas.png");
+    background-position: center;
+    background-size: auto;
+    background-repeat: no-repeat;
+  }
+
+border:
+Esta propiedad ajusta todos los elementos del borde en una línea. El primer valor es el grosor del borde. El segundo valor es el tipo de borde. El tercer valor es el color del borde. El color puede ser código hexadecimal, rgb o semántico.
+
+La propiedad border también puede ser dividida en líneas separadas usando border-width, border-style y border color. Además, puedes seleccionar muy específicamente a qué borde quieres aplicar estilo utilizando border-top, border-bottom, border-right, border-left.
+
+  button {
+    border: 2px dotted green;
+  }
+  div {
+    border: 1px solid #000000;
+  }
+  p {
+    border-right: 1px groove rgb(100,100,100);
+    border-left: 1px groove rgb(200,200,200);
+  }
+
+border-radius
+Esta propiedad permite que las esquinas de tu borde tengan una apariencia redondeada. Los valores se pueden establecer usando px o %.
+
+  button {
+    border-radius: 5px;
+  }

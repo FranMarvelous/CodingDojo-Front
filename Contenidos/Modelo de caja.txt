@@ -1,0 +1,137 @@
+El modelo de caja
+
+Todos los diseños web se realizan con elementos de bloque. Los diseñadores utilizan bloques, la mayoría de las veces elementos <div> para crear áreas rectangulares en las que encaja todo el contenido. Solo hay tres reglas:
+
+Área total: el espacio que un elemento ocupa y afecta.
+Float, clear y overflow
+Elementos anidados
+Área total
+El ancho total es la cantidad de espacio horizontal que ocupa un bloque. Esto incluye el margen, el borde y el relleno del bloque. Calcular el ancho, el relleno y el margen suele ser el mayor dolor de cabeza para los diseñadores, pero es fácil ver cómo funcionan si usas el modelo de caja.  
+
+El modelo de caja consta de las propiedades margen (margin), borde (border) y relleno (padding). 
+
+
+
+
+Margin está fuera de los elementos del bloque, mientras que padding está dentro de ellos. Esto significa que usamos margin para separar un bloque de las cosas que lo rodean y padding para alejar el contenido de un bloque de sus bordes.     
+
+Podemos establecer específicamente el margen, el relleno o el borde de cualquier lado de un elemento.
+
+div{
+  padding-top: 10px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+}
+
+También puedes utilizar la propiedad abreviada:
+
+div{
+  padding-top: 25px;
+  padding-right: 50px;
+  padding-bottom: 75px;
+  padding-left: 100px;
+}
+
+es equivalente a:
+
+div{
+  padding: 25px 50px 75px 100px;
+}
+
+Y
+
+div{
+  padding-top: 25px;
+  padding-right: 50px;
+  padding-bottom: 75px;
+  padding-left: 50px;
+}
+
+es equivalente a:
+
+div{
+  padding: 25px 50px 75px;
+}
+
+Y
+
+div{
+  padding-top: 25px;
+  padding-right: 50px;
+  padding-bottom: 25px;
+  padding-left: 50px;
+}
+
+es equivalente a:
+
+div{
+  padding: 25px 50px;
+}
+
+Y
+
+div{
+  padding-top: 25px;
+  padding-right: 25px;
+  padding-bottom: 25px;
+  padding-left: 25px;
+}
+
+es equivalente a:
+
+div{
+  padding: 25px;
+}
+
+(El orden fluye en el sentido de las agujas del reloj, arriba -> derecha -> abajo -> izquierda).
+
+Ahora, según el modelo de caja, el ancho total de un elemento es:
+
+(Margen x 2) + (Bordes x 2) + (Relleno x 2) + Ancho del contenido
+
+Calcular la altura es más complicado. ¿Por qué? Porque los márgenes verticales colapsan. 
+
+Ejemplo:
+
+HTML:
+
+<div id="box-1">
+</div>
+<div id="box-2">
+</div>
+<div id="box-3">
+</div>
+
+CSS:
+
+#box-1, #box-2, #box-3{
+  height: 100px;
+  width: 100px;
+  background-color: red;
+}
+#box-1{
+  margin: 20px;
+}
+#box-2{
+  margin: 30px;
+}
+#box-3{
+  margin: 40px;
+}
+
+Podrías pensar que esto se verá así:
+
+
+Pero este código realmente resultará en esto:
+
+
+Cuando los márgenes verticales de dos elementos se tocan, solo se respetará el margen del elemento con el valor de margen más grande, mientras que el margen del elemento con el valor de margen más pequeño se reducirá a cero.
+
+Hay otras situaciones en las que los elementos no tienen sus márgenes colapsados:
+
+elementos anidados con float
+elementos absolutamente posicionadoS
+elementos de bloque y en línea
+elementos con propiedad de overflow configurada en cualquier cosa menos visible (no colapsan los márgenes con sus hijos).
+elementos con clear (no contraen sus márgenes superiores con el margen inferior de su bloque padre).

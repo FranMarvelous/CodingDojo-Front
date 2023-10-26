@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Introducción a HTML</title>
+    <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
 
@@ -14,16 +15,25 @@
     <h5>Título 5</h5>
     <h6>Título 6</h6>
     
-    <p>Este es un párrafo ordinario.</p>
-    <p>
+    <p class="red">Este es un párrafo ordinario.</p>
+    <p id="parrafo_especial">
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa officiis, nobis error hic magnam distinctio accusantium laudantium, eligendi debitis dolor doloremque dolore cumque, nisi totam harum necessitatibus placeat voluptatum eius?
     </p> <!--ALT + Z PARA AJUSTAR TEXTO A PANTALLA-->
 
-    <a href="http://google.com" target="_blank">Este es un enlace a Google</a>
+    <a class:"red" href="http://google.com" target="_blank">Este es un enlace a Google</a>
 
     <p>
         Etiqueta <strong>strong o negrita</strong> y etiqueta <em>enfasis o itálica.</em>
     </p>
+
+    <div class="container">
+        <p>este es un párrafo hijo</p>
+        <a href="#">Este es un enlace hijo</a>
+        <div>
+            <p>Este es un párrafo nieto</p>
+        </div>
+        <p>Otro párrafo</p>
+    </div>
 
     <h2>Lista desordenada</h2>
     <ul>
@@ -121,6 +131,9 @@
             <input type="submit" value="Enviar">
         </div>
     </form>
+    <h3 class="prueba_color">
+        Prueba de Color
+    </h3>
 
 </body>
 </html>

@@ -1,0 +1,32 @@
+/* CSS - Cascade Style Sheets */
+*{
+    font-family: cursive;
+}
+
+h2{
+    color: blue;
+    font-size: 22px;
+}
+
+.red {
+    color: red;
+}
+
+#parrafo_especial{
+    border: 2px solid purple;
+    border-radius: 20px;
+}
+
+p  strong {
+    text-transform: uppercase;
+}
+
+.container > p { /*con el > accedemos solo a los hijos*/
+    border:1px dashed red;
+    border-radius: 10px;
+} 
+
+.prueba_color{
+color: aquamarine;
+background-color: green;
+}

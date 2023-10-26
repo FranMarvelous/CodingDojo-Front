@@ -1,0 +1,44 @@
+CSS - SELECTORES
+
+Selector descendente
+A veces sabemos que el elemento que queremos seleccionar está dentro de otro elemento. Si el elemento "padre" es uno que podemos seleccionar fácilmente (tal vez tenga una clase), entonces podemos usar esto en nuestro beneficio para acceder al elemento hijo de forma fácil.
+
+.quote p {
+	color: red ;
+}
+
+----
+Selector descendiente directo
+De manera similar al selector descendente, podemos seleccionar un elemento hijo con el selector descendiente directo `>`, pero a diferencia del selector descendente, no seleccionará nietos.
+
+.quote > p {
+	color: red;
+}
+
+----
+Combinar selectores
+selector | fuerza
+-------------------
+div      | +1
+#game    | +100
+p        | +1
+.score   | +10
+-------------------
+combinados | 112
+
+Hablamos anteriormente sobre la especificidad del selector y mencionamos cómo id tiene una fuerza relativa de 100. De hecho, podemos hacer selectores aún más fuertes combinándolos. Si escribimos un selector como div#game p.score (selecciona un párrafo con la clase "score" que sea hijo de un div con el id "game") tendrá una fuerza de 112.
+
+-----
+Selector de atributo
+A veces tenemos una situación en la que queremos diseñar dos elementos similares que dependen de un atributo para su comportamiento. Por ejemplo, si estamos creando un formulario, probablemente usemos `<input type =" text ">` para que el usuario ingrese datos y `<input type =" submit ">` que actúa como el botón en el que el usuario hace clic para enviar el CSS que queremos usar, en uno en que no queramos usar el otro. Si bien *podríamos* usar una clase para diferenciar entre los dos, también podríamos usar un selector que observe el atributo.
+
+input[type="text"] {
+    border: none;
+    border-bottom: 2px solid rebeccapurple;
+}
+input[type="submit"] {
+    color: white;
+    background-color: rebeccapurple;
+}
+
+Podemos aplicar algunos estilos a ambas entradas usando el selector `input` y seguir con selectores de atributos para diseñar la entrada de texto y el botón enviar de manera diferente.
