@@ -1,0 +1,62 @@
+*{
+    margin: 0;
+    border: 0;
+    padding: 0;
+}
+
+/*GENERAL*/
+.bandera{
+    background-color: gray;
+    height: 300px;
+    width: 608px;
+    margin: 20px;
+    border: 1px solid gray;
+}
+
+/*BANDERA GHANA*/
+#color1{
+    height: 100px;
+    background-color: red;
+}
+
+#color2{
+    height: 100px;
+    background-color: yellow;
+}
+
+#color3{
+    height: 100px;
+    background-color: green;
+}
+
+/*imagen dentro de bandera:*/
+img{
+    width: 100px;
+}
+
+#ghana{
+    margin-left: 43%;  
+}
+
+/*BANDERA MEXICO*/
+.bloque{
+    height: 300px;
+    width: 200px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+#verde{
+    background-color: green;
+}
+#blanco{
+    background-color: white;
+}
+#mexico{
+    width: 200px;
+    margin-top:50px ;
+}
+
+#rojo{
+    background-color: red;
+}
