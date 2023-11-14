@@ -1,0 +1,33 @@
+/*Reset*/
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+/* Body*/
+body {
+    font-family: 'Comic Neue', cursive;
+}
+
+/* main*/
+.container {
+    border: 2px solid black;
+    width: 450px;
+    padding: 20px;
+    margin: 0 auto; /*centra elementos con width*/
+}
+
+/*tarjeta*/
+.row {
+    display: flex;
+    align-items: center; /*vertical*/
+    justify-content: space-between; /*horizontal*/
+}
+
+button {
+    background-color: yellow;
+    border: 2px solid black;
+    padding: 5px;
+    box-shadow: 2px 2px 1px black;
+}

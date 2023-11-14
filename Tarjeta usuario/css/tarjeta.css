@@ -1,0 +1,49 @@
+*{
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+body {
+    font-family: Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/*tarjeta*/
+.card {
+    width: 500px;
+    margin: 0 auto;
+}
+
+.card-header{
+    background-color: #18a2b8;
+    height: 80px;
+    border-radius: 6px 6px 0 0;
+}
+
+.card-header img{
+    width: 60px;
+    position: relative;
+    top: 50px;
+    left: 30px;
+    border: 2px solid lightgray;
+    border-radius: 50%;
+}
+
+.card-body{
+    height: 150px;
+    border: 2px solid lightgray;
+    padding: 30px;
+}
+
+.icon {
+    width: 12px;
+    margin-right: 6px;
+}
+
+.card-body > * {
+    margin-bottom: 10px;
+}
+
+a{
+    color: #2B78E4;
+}

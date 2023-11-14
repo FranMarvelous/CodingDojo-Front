@@ -16,5 +16,5 @@ img{
     /*mover verticalmente:*/
     align-items: center;
     /*mover horizontalmente:*/
-    justify-content:space-evenly ;
+    justify-content: center;
 }

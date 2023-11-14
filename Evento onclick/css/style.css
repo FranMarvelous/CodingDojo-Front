@@ -1,0 +1,156 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Body*/
+body {
+    font-family: 'Comic Neue', cursive;
+}
+
+/* Navbar */
+.flex-container {
+    width: 940px;
+    margin: 0 auto;
+}
+
+.flex-container, .nav {
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+}
+
+.nav {
+    height: 80px;
+    background-color: #CCCCCC;
+    color: #000000;
+    margin-bottom: 20px;
+}
+
+.search {
+    width: 300px;
+    height: 25px;
+    border: 3px solid black;
+    border-radius: 3px;
+}
+
+.btn {
+    height: 30px;
+    width: 100px;
+    color: #fff;
+    background-color: #2B78E4;
+    border: 2px solid black;
+    border-radius: 3px;
+    font-size: 1rem;
+    box-shadow: 2px 2px 0 black;
+}
+
+.btn:hover{
+    background-color: #5994e7;
+    cursor: pointer;
+}
+
+/* Main */
+
+.flex-container.main {
+    align-items: flex-start;
+    width: 800px;
+}
+
+.col-2 {
+    flex: 2;
+    margin-right: 20px;
+}
+
+.col-1 {
+    flex: 1;
+}
+
+.card {
+    background-color: #fff;
+    border: 3px solid black;
+    margin-bottom: 20px;
+    border-radius: 4px;
+    font-size: 1.2rem;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+}
+
+
+.card-body {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Textos*/
+a {
+    color: #3774A8;
+}
+
+card-body > h1, h2, p  {
+    margin-bottom: 15px;
+}
+
+.definition {
+    font-size: x-large;
+}
+
+.noun, span {
+    font-style: italic;
+}
+
+.plural {
+    font-size: 14px;
+}
+
+.right-card {
+    font-size: xx-large;
+    font-weight: 500;
+}
+
+.you {
+    font-style: normal;
+    font-weight: bolder;
+}
+
+
+/* Card Buttons */
+.likes-btn {
+    color: black;
+    background-color: #FFD966;
+    font-size: medium;
+    border: 2px solid black;
+    border-radius: 3px;
+    padding: 5px;
+    box-shadow: 2px 2px 0 black;
+    font-family: 'Comic Neue';
+    font-weight: bold;
+    width: 85px;
+}
+
+.likes-btn:hover{
+    background-color: #f5c430;
+    cursor: pointer;
+}
+
+.add-btn {
+    color: black;
+    background-color: #93c47d;
+    border: 2px solid black;
+    border-radius: 3px;
+    padding: 5px;
+    box-shadow: 2px 2px 0 black;
+    font-family: 'Comic Neue';
+    font-size: medium;
+    font-weight: bold;
+    width: 210px;
+}
+
+.add-btn:hover{
+    background-color: #72c74b;
+    cursor: pointer;
+}

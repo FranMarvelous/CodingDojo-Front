@@ -1,0 +1,27 @@
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+container {
+    border: 2px solid black;
+    height: 1500px;
+}
+
+.element {
+    background-color: gray;
+    padding: 10px;
+}
+
+.main-element {
+    background-color: yellow;
+    padding: 10px;
+    position: relative; /*por default los elementos traen posición estatica (STATIC), es decir no se mueven. Para darle movimiento a los elementos, debemos cambiarlo: RELATIVE -> permite el uso de top, left, bottom, right, en base a su posiciòn original y sin afectar la posiciòn de otros elementos.
+    ABSOLUTE: el contenedor padre debe tener una position RELATIVE para que el elemento pueda moverse en base a él, e ignora el resto de los elementos.
+    FIXED: no se ve afectado por el scroll e ignora los elementos a su alrededor; queda FIJO en la posición otorgada.
+    STICKY: va a tener posiciòn original y cuando hagamos scroll se fija en la posición que establecimos, es como que se queda pegado en su posicion cuando scrolleamos.*/
+    top: 20px;
+    left: 15px;
+    /*instrucciones de movimiento ^^^ */
+}

@@ -1,0 +1,143 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-family: 'Quicksand';
+}
+
+/* Header */
+header {
+    background-color: #9FC5F8;
+    color: white;
+    padding: 20px 0;
+}
+
+nav {
+    width: 1000px; /*establezco tamaño específico para centrar en relación al padre*/
+    margin: 0 auto; /*centrado*/
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    flex: 1;
+    justify-content: space-between;
+}
+
+nav h1 {
+    flex: 2;
+}
+
+h1, nav a { 
+    text-decoration: none;
+    color: white;
+}
+
+h1 {
+    font-size: 30px;
+}
+
+nav a {
+    font-size: 20px;
+}
+
+/* header main*/
+.san-jose{
+    display: flex;
+    align-items: center;
+    width: 1000px;
+    margin: 0 auto; /*mismo width y margin que nav para alinearlos*/
+    justify-content: space-between;
+    padding: 20px 0;
+    border-bottom: 2px solid black;
+}
+
+/* tarjetas */
+.semana{
+    width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    gap: 5%; /*espacio entre los hijos*/
+    margin-top: 20px;
+}
+
+.dia {
+    flex: 1; /*se le asigna la cantidad de espacio a utilizar dentro del contenedor*/
+    border-radius: 5px;
+    text-align: center;
+    background-color: #EEEEEE;
+    padding: 15px 0;
+}
+
+.dia img {
+    width: 120px;
+    border-radius: 50%;
+    margin: 20px 0;
+}
+
+.temperaturas{
+    display: flex;
+    justify-content: space-around;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.max{
+    color: red;
+}
+
+.min{
+    color: blue;
+}
+
+/* cookies */
+footer{
+    position: fixed;
+    bottom: 0; /* para situarse en el punto más bajo de la página*/
+    width: 100%; /*se establece ancho para que el hijo se centre respecto de él*/
+}
+
+.cookies{
+    width: 954px;
+    margin: 0 auto;
+    display: flex;
+    background-color: #EEEEEE;
+    color: black;
+    border: 3px solid black;
+    border-radius: 5px;
+    padding: 10px 20px;
+    height: 100px;
+    margin-bottom: 20px;
+    align-items: center;
+}
+
+.cookies img{
+    width: 100px;
+}
+
+.cookies-text{
+    padding: 10px;
+}
+
+
+.cookies-btn{
+    height: 30px;
+    width: 120px;
+    color: black;
+    background-color: #9FC5F8;
+    border: 2px solid black;
+    border-radius: 3px;
+    font-size: 1rem;
+    box-shadow: 2px 2px 0 black;
+    padding: 0 10px;
+    font-family: 'Quicksand';
+}
+
+.cookies-btn:hover{
+    background-color: #2B78E4;
+    cursor: pointer;
+}

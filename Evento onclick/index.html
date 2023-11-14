@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dojonary</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <div class="nav">
+        <div class="flex-container">
+            <h1 class="nav-title">Dojonary</h1>
+            <input type="text" placeholder=" Search" class="search">
+            <button class="btn" onclick="logout(this)">Login</button>
+        </div>
+    </div>
+
+    <div class="flex-container main">
+        <div class="col-2">
+            <div class="card">
+                <div class="card-body">
+                    <h1>ninja</h1>
+                    <p class="noun">noun</p>
+                    <p class="plural">Plural: <span>ninjas</span></p>
+                    <button class="likes-btn" onclick="alerta()">13 likes</button>
+                </div>
+                <div class="card-body">
+                    <p class="definition">A practitioner skilled in the <br><a href="#">Japanese</a> art of <a href="#">ninjutsu</a></p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-body">
+                    <h1>ninja</h1>
+                    <p class="noun">noun</p>
+                    <p class="plural">Plural: <span>ninjas</span></p>
+                    <button class="likes-btn">37 likes</button>
+                </div>
+                <div class="card-body">
+                    <p class="definition">A <a href="#">programmer</a> who breaks <br> down problems with <a href="#">zen</a>-like <br>focus</p> 
+                </div>
+            </div>
+
+        </div>
+
+        <div class="col-1">
+            <div class="card">
+                <div class="card-body">
+                    <p class="right-card">Dojonary is defined by <span class="you">YOU</span></p>
+                    <button class="add-btn" onclick="deleteBtn(this)">Add Definition</button>
+                </div>
+            </div>
+    <script src="/js/script.js"></script>
+</body>
+</html>
